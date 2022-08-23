@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
+
 export const BuzzerComponent = () => {
-    return (
 
-      <div>Buzzer</div>
+  let { key } = useParams();
 
-    );
-  }
+  return (
+    <div>Buzzer: { key }</div>
+  );
+}

@@ -16,9 +16,9 @@ const App = () => {
 
         <Routes>
           <Route path="/display/:key" element={ <DisplayComponent /> } />
+          <Route path="/diagnostic/:key" element={ <DiagnosticComponent /> } />
+          <Route path="/buzzer/:key" element={ <BuzzerComponent /> } />
           <Route path="/" element={ <ManagementComponent /> } />
-          <Route path="/" element={ <DiagnosticComponent /> } />
-          <Route path="/" element={ <BuzzerComponent /> } />
         </Routes>
 
       </div>

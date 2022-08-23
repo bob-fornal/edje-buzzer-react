@@ -1,5 +1,10 @@
+import { useParams } from "react-router-dom";
+
 export const DiagnosticComponent = () => {
-    return (
-      <div>Diagnostic</div>
-    );
-  }
+
+  let { key } = useParams();
+
+  return (
+    <div>Diagnostic: { key }</div>
+  );
+}
