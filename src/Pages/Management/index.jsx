@@ -1,5 +1,5 @@
 
-export function Management() {
+export const ManagementComponent = () => {
   return (
     <div>Management</div>
   );

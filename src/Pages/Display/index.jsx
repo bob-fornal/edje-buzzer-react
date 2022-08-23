@@ -1,7 +1,7 @@
 
 import { useParams } from "react-router-dom";
 
-export function Display() {
+export const DisplayComponent = () => {
 
   let { key } = useParams();
 
