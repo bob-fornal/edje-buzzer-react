@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="wrapper">
 
-        <Routes>
+        <Routes basename={ '/edje-buzzer-react' }>
           <Route path="/display/:key" element={ <Display /> } />
           <Route path="/" element={ <Management /> } />
         </Routes>
