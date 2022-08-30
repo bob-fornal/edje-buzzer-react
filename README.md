@@ -70,3 +70,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 #### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#### `<links>` paths
+
+The links to the pages contains proper URL with key and the paths within the table servers as a navigation tool to access the pages.
+
+#### `Hashrouter` when Routing
+
+This inserts a hastag within the URL to render the compenents it's attached to.
+
+#### `Homepage` to `Package.json`
+
+The `homepage` property indicates where this app is being hosted in. In this case this app is being hosted by GitHub pages.["https://bob-fornal.github.io/edje-buzzer-react/"]
