@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/edje-buzzer-react/static/css/main.302372d3.css",
-    "main.js": "/edje-buzzer-react/static/js/main.4beb9e72.js",
+    "main.css": "/edje-buzzer-react/static/css/main.4dc99a82.css",
+    "main.js": "/edje-buzzer-react/static/js/main.71b88224.js",
     "static/js/787.53b8dcf4.chunk.js": "/edje-buzzer-react/static/js/787.53b8dcf4.chunk.js",
     "index.html": "/edje-buzzer-react/index.html",
-    "main.302372d3.css.map": "/edje-buzzer-react/static/css/main.302372d3.css.map",
-    "main.4beb9e72.js.map": "/edje-buzzer-react/static/js/main.4beb9e72.js.map",
+    "main.4dc99a82.css.map": "/edje-buzzer-react/static/css/main.4dc99a82.css.map",
+    "main.71b88224.js.map": "/edje-buzzer-react/static/js/main.71b88224.js.map",
     "787.53b8dcf4.chunk.js.map": "/edje-buzzer-react/static/js/787.53b8dcf4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.302372d3.css",
-    "static/js/main.4beb9e72.js"
+    "static/css/main.4dc99a82.css",
+    "static/js/main.71b88224.js"
   ]
 }
