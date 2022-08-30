@@ -1,5 +1,6 @@
 
 import './Management.css';
+import { Key } from '@Features/Key';
 import { Links } from '@Features/Links';
 import { Version } from '@Features/Version';
 
@@ -10,7 +11,9 @@ export const ManagementComponent = () => {
         <Version />
         <Links />
       </div>
-      <div className="right-wrapper"></div>
+      <div className="right-wrapper">
+        <Key />
+      </div>
     </>
   );
 }
