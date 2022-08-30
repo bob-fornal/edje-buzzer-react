@@ -1,0 +1,21 @@
+
+.left-wrapper {
+  display: inline-block;
+  height: calc(100vh - 2em);
+  width: 30vw;
+
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.right-wrapper {
+  display: inline-block;
+  margin-left: 1em;
+  height: calc(100vh - 2em);
+  width: calc(70vw - 4em);
+
+  position: absolute;
+  top: 1em;
+  left: calc(30vw + 2em);
+}

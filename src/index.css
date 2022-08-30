@@ -8,6 +8,21 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.card {
+  margin-bottom: 1em !important;
+}
+.pale-green {
+  background-color: #98fb98 !important;
+  color: #444 !important;
+}
+.pale-yellow {
+  background-color: #eee8aa !important;
+  color: #444 !important;
 }

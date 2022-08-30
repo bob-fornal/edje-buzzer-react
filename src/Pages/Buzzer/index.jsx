@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 
 export const BuzzerComponent = () => {
@@ -7,4 +8,4 @@ export const BuzzerComponent = () => {
   return (
     <div>Buzzer: { key }</div>
   );
-}
+};
