@@ -1,3 +1,4 @@
+
 import { useParams } from "react-router-dom";
 
 export const DiagnosticComponent = () => {
@@ -7,4 +8,4 @@ export const DiagnosticComponent = () => {
   return (
     <div>Diagnostic: { key }</div>
   );
-}
+};

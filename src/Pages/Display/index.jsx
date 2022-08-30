@@ -8,4 +8,4 @@ export const DisplayComponent = () => {
   return (
     <div>Display: { key }</div>
   );
-}
+};
