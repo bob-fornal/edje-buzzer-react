@@ -61,12 +61,12 @@ export const Links = () => {
                   <TableCell>
                     <button className="icon-parent link-button" onClick={ () => copy(row.link) }>
                       COPY <ContentCopy className='icon' sx={{ fontSize: 16 }} />
-                      </button>
+                    </button>
                   </TableCell>
                   <TableCell>
                     <a className="icon-parent" href={ getHref(row.link) } target="_blank" rel="noopener noreferrer">
                       OPEN <OpenInBrowser className='icon' sx={{ fontSize: 16 }} />
-                      </a>
+                    </a>
                   </TableCell>
                 </TableRow>
               ))}
