@@ -8,7 +8,6 @@ import { DiagnosticComponent } from './Pages/Diagnostic';
 import { DisplayComponent } from './Pages/Display';
 import { ManagementComponent } from './Pages/Management';
 
-
 const App = () => {
   return (
     <Router>
