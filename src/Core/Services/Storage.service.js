@@ -13,6 +13,10 @@ class Storage {
     this.localStorage.setItem(key, stringified);
   }
 
+  remove(key) {
+    this.localStorage.removeItem(key);
+  }
+
 }
 
 export const storage = new Storage();
