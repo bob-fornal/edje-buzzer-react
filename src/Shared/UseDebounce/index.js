@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 
 // https://usehooks.com/useDebounce/
-function useDebounce(value, delay) {
+export function useDebounce(value, delay) {
 
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -21,5 +21,3 @@ function useDebounce(value, delay) {
 
   return debouncedValue;
 }
-
-export default useDebounce;

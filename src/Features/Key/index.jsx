@@ -5,12 +5,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
 
-import { Title } from '@Shared/Title';
-import useDebounce from '@Shared/UseDebounce';
-
-import { storage } from '@Core/Services/Storage.service';
-
-import config from '@Core/Constants/config.json';
+import { Title, useDebounce } from '@Shared';
+import { storageService } from '@Core/Services';
+import { config } from '@Core/Constants';
 
 function useFormInput(initialValue) {
   const [value, setValue] = useState(initialValue);
@@ -24,7 +21,7 @@ function useFormInput(initialValue) {
 
 export const Key = () => {
   
-  const keyValue = storage.get(config.key) || '';
+  const keyValue = storageService.get(config.key) || '';
   const keyInput = useFormInput(keyValue);
 
   const debouncedValue = useDebounce(keyInput.value, 1000);
@@ -32,9 +29,9 @@ export const Key = () => {
   useEffect(
     () => {
       if (debouncedValue) {
-        storage.setKey(debouncedValue);
+        storageService.setKey(debouncedValue);
       } else {
-        storage.remove(config.key);
+        storageService.remove(config.key);
       }
     },
     [debouncedValue]

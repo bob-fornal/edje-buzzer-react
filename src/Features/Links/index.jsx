@@ -12,8 +12,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import { storage } from '@Core/Services/Storage.service';
-import { Title } from '@Shared/Title';
+import { storageService } from '@Core/Services';
+import { Title } from '@Shared';
+
 import './Links.css';
 
 let key = '';
@@ -21,7 +22,7 @@ function handleKeyChange(newKey) {
   key = newKey;
 }
 
-storage.key.subscribe(handleKeyChange);
+storageService.key.subscribe(handleKeyChange);
 
 function createData(id, title, link) {
   return { id, title, link };

@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 import config from '@Core/Constants/config.json';
 
-class Storage {
+class StorageService {
 
   key = new BehaviorSubject('');
   
@@ -36,4 +36,4 @@ class Storage {
 
 }
 
-export const storage = new Storage();
+export const storageService = new StorageService();
