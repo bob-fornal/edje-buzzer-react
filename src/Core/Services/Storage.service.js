@@ -1,7 +1,24 @@
 
+import { BehaviorSubject } from 'rxjs';
+
+import config from '@Core/Constants/config.json';
+
 class Storage {
 
+  key = new BehaviorSubject('');
+  
   localStorage = window.localStorage;
+
+  constructor() {
+    const keyValue = this.get(config.key) || '';
+    this.key.next(keyValue);
+  };
+
+  setKey (content) {
+    const key = config.key;
+    this.key.next(content);
+    this.set(key, content);
+  }
 
   get(key) {
     const result = this.localStorage.getItem(key);

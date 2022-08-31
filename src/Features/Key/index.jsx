@@ -32,7 +32,7 @@ export const Key = () => {
   useEffect(
     () => {
       if (debouncedValue) {
-        storage.set(config.key, debouncedValue);
+        storage.setKey(debouncedValue);
       } else {
         storage.remove(config.key);
       }

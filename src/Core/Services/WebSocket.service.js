@@ -1,7 +1,7 @@
 
 import { Observable } from 'rxjs';
 
-import config from '@Core/Contants/config.json';
+import config from '@Core/Constants/config.json';
 
 class WebSocketService {
 

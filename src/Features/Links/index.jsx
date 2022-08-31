@@ -12,23 +12,31 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import { storage } from '@Core/Services/Storage.service';
 import { Title } from '@Shared/Title';
 import './Links.css';
+
+let key = '';
+function handleKeyChange(newKey) {
+  key = newKey;
+}
+
+storage.key.subscribe(handleKeyChange);
 
 function createData(id, title, link) {
   return { id, title, link };
 }
 
 const rows = [
-  createData('display', 'Display', '/#/display/11111'),
-  createData('buzzer', 'Buzzer', '/#/diagnostic/22222'),
-  createData('diagnostics', 'Diagnostic', '/#/buzzer/33333')
+  createData('display', 'Display', '/#/display/'),
+  createData('buzzer', 'Buzzer', '/#/diagnostic/'),
+  createData('diagnostics', 'Diagnostic', '/#/buzzer/')
 ];
 
 const copy = async (content) => {
   const base = window.location.origin + window.location.pathname;
   try {
-    await navigator.clipboard.writeText(base + content);
+    await navigator.clipboard.writeText(base + content + key);
   } catch (error) {
     console.log('copy failed', error);
   }
@@ -36,7 +44,7 @@ const copy = async (content) => {
 
 const getHref = (content) => {
   const base = window.location.origin + window.location.pathname;
-  return base + content;
+  return base + content + key;
 };
 
 export const Links = () => {
@@ -55,8 +63,8 @@ export const Links = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <TableRow key={ row.id }>
+              {rows.map((row, index) => (
+                <TableRow key={ row.id } style={{ background: (index % 2 ? 'white' : '#bbb') }}>
                   <TableCell>{ row.title }</TableCell>
                   <TableCell>
                     <button className="icon-parent link-button" onClick={ () => copy(row.link) }>

@@ -1,14 +1,13 @@
 
 import './Management.css';
-import { Key } from '@Features/Key';
-import { Links } from '@Features/Links';
-import { Version } from '@Features/Version';
+import { Key, Links, Teams, Version } from '@Features';
 
 export const ManagementComponent = () => {
   return (
     <>
       <div className="left-wrapper">
         <Version />
+        <Teams />
         <Links />
       </div>
       <div className="right-wrapper">
