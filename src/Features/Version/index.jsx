@@ -2,8 +2,8 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-import { Title } from '@Shared/Title';
-import config from '@Core/Constants/config.json';
+import { Title } from '@Shared';
+import { config } from '@Core/Constants';
 
 export const Version = () => {
   const version = config.version;

@@ -1,16 +1,18 @@
 
 import './Management.css';
-import { Links } from '@Features/Links';
-import { Version } from '@Features/Version';
+import { Key, Links, Teams, Version } from '@Features';
 
 export const ManagementComponent = () => {
   return (
     <>
       <div className="left-wrapper">
         <Version />
+        <Teams />
         <Links />
       </div>
-      <div className="right-wrapper"></div>
+      <div className="right-wrapper">
+        <Key />
+      </div>
     </>
   );
 }

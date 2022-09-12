@@ -3,11 +3,7 @@ import './App.css';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { BuzzerComponent } from './Pages/Buzzer';
-import { DiagnosticComponent } from './Pages/Diagnostic';
-import { DisplayComponent } from './Pages/Display';
-import { ManagementComponent } from './Pages/Management';
-
+import { BuzzerComponent, DiagnosticComponent, DisplayComponent, ManagementComponent } from '@Pages';
 
 const App = () => {
   return (
